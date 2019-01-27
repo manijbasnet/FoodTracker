@@ -40,7 +40,10 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         present(imagePickerController, animated: true, completion: nil)
     }
     
-
+    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     //MARK: UITextFieldDelegate
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
